@@ -6,12 +6,6 @@ on:
       - main
 
 jobs:
-  build-Successful:
-    runs-on: ubuntu-22.04
-    steps:
-    - name: print
-      run: echo "Finished" 
-  
   build-linux:
     runs-on: ubuntu-22.04
     steps:
@@ -47,11 +41,11 @@ jobs:
     - name: Publish Blogifier
       run: dotnet publish -c Release /p:RuntimeIdentifier=linux-x64 ./src/Blogifier/Blogifier.csproj --output dist
  
-   build-Successful:
-      runs-on: ubuntu-22.04
-      steps:
-      - name: print
-        run: echo "Finished" 
+  build-Successful:
+    runs-on: ubuntu-22.04
+    steps:
+    - name: print
+      run: echo "Finished" 
 
     #- name: Add .nojekyll file
     #  run: touch dist/.nojekyll
