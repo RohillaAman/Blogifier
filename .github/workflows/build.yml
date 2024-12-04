@@ -42,6 +42,7 @@ jobs:
       run: dotnet publish -c Release /p:RuntimeIdentifier=linux-x64 ./src/Blogifier/Blogifier.csproj --output dist
  
   build-Successful:
+    needs: build-linux
     runs-on: ubuntu-22.04
     steps:
     - name: print
