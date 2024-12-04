@@ -40,7 +40,9 @@ jobs:
 
     - name: Publish Blogifier
       run: dotnet publish -c Release /p:RuntimeIdentifier=linux-x64 ./src/Blogifier/Blogifier.csproj --output dist
-
+build-Sucessful:
+    -name: print
+    run: echo "Finished" 
     #- name: Add .nojekyll file
     #  run: touch dist/.nojekyll
 
