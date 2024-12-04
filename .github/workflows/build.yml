@@ -9,8 +9,8 @@ jobs:
   build-Successful:
     runs-on: ubuntu-22.04
     steps:
-    -name: print
-    run: echo "Finished" 
+    - name: print
+      run: echo "Finished" 
   
   build-linux:
     runs-on: ubuntu-22.04
