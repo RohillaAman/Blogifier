@@ -6,10 +6,12 @@ on:
       - main
 
 jobs:
-  build-Sucessful:
+  build-Successful:
+    runs-on: ubuntu-22.04
     steps:
     -name: print
     run: echo "Finished" 
+  
   build-linux:
     runs-on: ubuntu-22.04
     steps:
